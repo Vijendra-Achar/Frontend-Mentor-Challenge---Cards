@@ -56,6 +56,12 @@ body {
   align-items: center;
 }
 
+.cards .cards--vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .box {
   width: 24rem;
   height: 16rem;
@@ -106,4 +112,32 @@ body {
 .footer {
   margin: 1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 475px) {
+  body {
+    max-height: 100%;
+    max-width: 100vw;
+  }
+
+  .container {
+    margin: 2rem;
+  }
+
+  .header {
+    font-size: 0.75rem;
+  }
+
+  .header .header__desc {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
